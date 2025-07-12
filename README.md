@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# 🌗 Theme Context Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple React app that demonstrates how to use the **React Context API** to manage global state — specifically for implementing a light/dark **theme switcher**.
 
-## Available Scripts
+It helps you understand:
 
-In the project directory, you can run:
+- How to avoid **prop drilling**
+- How to use `createContext`, `useContext`, and a custom provider
+- How to apply context values (theme + toggle) across components
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Theme Toggle Screenshot](./screenshot.png) 
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 File Structure
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+theme-context-demo/
+├── ThemeContext.js
+├── ThemeProvider.js
+├── ThemedBox.js
+├── App.js
+└── ...
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧠 What You'll Learn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ✅ Creating a context using React.createContext()
 
-### `npm run eject`
+    ✅ Using a provider component to pass down values
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ✅ Accessing context with useContext
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ✅ Styling components based on theme
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🛠️ Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Clone the repo
+git clone https://github.com/luckaty/theme-context-demo.git
 
-## Learn More
+# Navigate to the project
+cd theme-context-demo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Install dependencies
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Start the dev server
+npm start
 
-### Code Splitting
+Then visit http://localhost:3000 in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+🔧 How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ThemeContext.js: Creates a context.
 
-### Making a Progressive Web App
+    ThemeProvider.js: Holds the state (light or dark) and provides a toggleTheme function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ThemedBox.js: Consumes the context and renders UI with theme styles.
 
-### Advanced Configuration
+    App.js: Wraps everything inside <ThemeProvider>.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📚 License
 
-### `npm run build` fails to minify
+This project is open for educational and personal use. Do not use this as a commercial product without permission.
+🙌 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by Blessed Ogechukwu — React learner and web developer on a journey 🚀
+💡 Want to Learn More?
+
+    React Context API Docs
+
+    useContext Hook
